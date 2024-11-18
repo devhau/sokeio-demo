@@ -28,7 +28,6 @@
               <h1>Main Application</h1>
               <p so-text="count">Current Time: </p>
               <button class="btn btn-primary" so-on:click="count++;">Increment</button>
-              [sokeio::secondary-template/]
           </div>`;
         },
       };
@@ -78,6 +77,11 @@
       export default {
         components: {
           'sokeio::secondary-template': secondaryTemplate
+        },
+            render() {
+          return `<div>
+              [sokeio::secondary-template/]
+          </div>`;
         },
       };
     </script>
